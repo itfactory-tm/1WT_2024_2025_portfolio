@@ -1,0 +1,126 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 1WT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            height: 100vh;
+            background: linear-gradient(180deg, #b7dc7f 0%, #ecf385 100%);
+            overflow: hidden;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        h1 {
+            margin: 2rem 0;
+            letter-spacing: .1rem;
+            color: #d3fafb;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+        }
+
+        main {
+            width: 500px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 2rem;
+            font-weight: bold;
+
+            ul {
+                display: flex;
+                gap: 2rem;
+                list-style: none;
+            }
+
+            li {
+                flex: 1;
+                display: flex;
+                background-color: #0e7490;
+                padding: .5rem 1rem;
+                border-radius: .25rem;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+                transition: .3s;
+
+                &:hover {
+                    transform: translate(-1px, -1px);
+                    background-color: #155e75;
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+                }
+            }
+
+            a {
+                flex: 1;
+                font-size: 1.5rem;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: #d3fafb;
+            }
+        }
+
+        aside {
+            width: 150px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            filter: grayscale(50%);
+            opacity: .2;
+            animation: move 20s infinite;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @keyframes move {
+            0%, 100% {
+                bottom: -150px;
+                opacity: .2;
+            }
+            10% {
+                bottom: -10px;
+                opacity: 1;
+            }
+            10.5% {
+                bottom: -150px;
+                opacity: .2;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>[Naam]</h1>
+    <nav>
+        <ul>
+            <li><a href="portfolio/index.html" target="subsite">Portfolio</a></li>
+            <li><a href="flyer/index.html" target="subsite">Flyer</a></li>
+        </ul>
+    </nav>
+</main>
+<aside>
+    <!-- Gecko from https://rawsvg.com/svg/gecko-lizard-vector-illustration-fb5irzw7gmhl38oc.html -->
+    <img src="portfolio/assets/gecko.svg" alt="gecko">
+</aside>
+</body>
+</html>
